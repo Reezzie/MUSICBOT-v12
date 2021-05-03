@@ -1,6 +1,7 @@
 const { MessageEmbed } = require("discord.js");
 module.exports = {
   name: "moveall",
+  category: "moderation",
   run: async (client, message, args) => {
     if (!message.member.permissions.any(["ADMINISTRATOR", "MOVE_MEMBERS"])) {
       return message.reply(
